@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100&display=swap" rel="stylesheet">
 		<title>Pirogramming Timer</title>
 		<style>
 			#app {
@@ -14,14 +15,27 @@
 				align-items: center;
 				justify-content: center;
 			}
+			.displayNone{
+				display: none;
+			}
+			.dgt-clock{
+				margin-top: 50px;
+				font-family: 'Noto Sans KR', sans-serif;
+			}
 		</style>
 	</head>
 	<body>
 		<div id="app">
-			<div class="anlg-clock">아날로그 시계</div>
-			<div class="dgt-clock">디지털 시계</div>
-			<div class="timer">타이머 설정하기</div>
+			<div class="anlg-clock"><img src="http://images.webskills.kr/etc/s.png" alt=""></div>
+			<div class="dgt-clock"></div>
+			<div class="timer"></div>
 		</div>
 	</body>
 	<script src="./index.js"></script>
 </html>
+
+
+<!--맨 아래 타이머 설정하기가 있는 부분에 타이머를 조작하는 버튼을 만들어주세요.-->
+<!--디지털 시계 부분에 브라우저를 새로고침하면 0이되는 시간초 나타내는 숫자 판을 만들어주세요.-->
+<!--타이머 설정하기 부분에는 + 버튼과 - 버튼이 있습니다. 각 버튼을 누르면 위에서 만든 디지털 시계 부분에 1초씩 추가 / 삭제 됩니다. 다만 0초 이상이어야 하고 60초 미만이어야 합니다.-->
+<!--시작 버튼이 있습니다. 시작을 누르면 시작 버튼과 + - 버튼은 disabled 상태가 되고, 시간초를 나타내는 부분이 1초에 1씩 감소합니다. 0이 되면 정지합니다. 정지되면 disabled가 풀립니다.-->
